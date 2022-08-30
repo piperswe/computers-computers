@@ -13,6 +13,8 @@
 
         buildInputs = [
           pkgs.hugo
+          pkgs.nodejs
+          pkgs.yarn
         ];
 
         buildPhase = ''

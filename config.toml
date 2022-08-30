@@ -1,3 +1,40 @@
-baseURL = 'https://piperswe.me/'
-languageCode = 'en-us'
-title = 'Computers? Computers.'
+baseURL = "https://piperswe.me/"
+languageCode = "en-us"
+theme = "terminal"
+paginate = 5
+
+[params]
+  themeColor = "pink"
+  centerTheme = true
+  Toc = true
+  TocTitle = "Table of Contents"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Computers? Computers."
+    subtitle = "A strange mixture of computers and random rambling by Piper McCorkle (she/they)"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Computers? Computers."
+      logoHomeLink = "/"
+
+    # [languages.en.menu]
+    #   [[languages.en.menu.main]]
+    #     identifier = "about"
+    #     name = "About"
+    #     url = "/about"
+    #   [[languages.en.menu.main]]
+    #     identifier = "showcase"
+    #     name = "Showcase"
+    #     url = "/showcase"
