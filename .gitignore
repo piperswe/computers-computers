@@ -1,4 +1,5 @@
 .direnv/
+/result
 
 # Generated files by hugo
 /public/

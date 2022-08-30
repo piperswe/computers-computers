@@ -14,6 +14,15 @@
         buildInputs = [
           pkgs.hugo
         ];
+
+        buildPhase = ''
+          hugo
+        '';
+
+        installPhase = ''
+          mkdir -p $out/share
+          cp -R public $out/share/computers-computers
+        '';
       };
       packages.default = packages.website;
 
