@@ -1,0 +1,9 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+{{ partial "img.html" (dict
+  "src" $src
+  "class" (.Get "class")
+  "sizes" (.Get "sizes")
+  "caption" (.Get "caption")
+  "alt" (.Get "alt")
+) }}

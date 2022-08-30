@@ -9,6 +9,7 @@ description = "A up-to-date guide for installing and running Multicraft on Debia
 showFullContent = false
 readingTime = true
 hideComments = false
+draft = false
 +++
 
 > This post is extremely out of date. Debian 9 has been succeeded by Debian 10,

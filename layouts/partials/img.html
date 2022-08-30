@@ -1,0 +1,93 @@
+{{/* from https://laurakalbag.com/processing-responsive-images-with-hugo/ */}}
+
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := .src }}
+
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+
+{{ $tinyw := default "500x" }}
+{{ $smallw := default "800x" }}
+{{ $mediumw := default "1200x" }}
+{{ $largew := default "1500x" }}
+
+{{/* resize the src image to the given sizes */}}
+
+{{ $tinyjpeg := $src.Resize (printf "%s jpeg" $tinyw) }}
+{{ $smalljpeg := $src.Resize (printf "%s jpeg" $smallw) }}
+{{ $mediumjpeg := $src.Resize (printf "%s jpeg" $mediumw) }}
+{{ $largejpeg := $src.Resize (printf "%s jpeg" $largew) }}
+
+{{ $tinywebp := $src.Resize (printf "%s webp" $tinyw) }}
+{{ $smallwebp := $src.Resize (printf "%s webp" $smallw) }}
+{{ $mediumwebp := $src.Resize (printf "%s webp" $mediumw) }}
+{{ $largewebp := $src.Resize (printf "%s webp" $largew) }}
+
+{{/*  {{ $scratch.Set "tinyavif := $src.Resize (printf "%s avif" $tinyw) }}
+{{ $smallavif := $src.Resize (printf "%s avif" $smallw) }}
+{{ $mediumavif := $src.Resize (printf "%s avif" $mediumw) }}
+{{ $largeavif := $src.Resize (printf "%s avif" $largew) }}  */}}
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
+<figure {{ with .class }}class="{{.}}"{{ end }}>
+  <picture>
+    {{/*  <source
+      {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
+      srcset='
+      {{ if ge $src.Width "500" }}
+        {{ with $tinyavif.RelPermalink }}{{.}} 500w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "800" }}
+        {{ with $smallavif.RelPermalink }}, {{.}} 800w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1200" }}
+        {{ with $mediumavif.RelPermalink }}, {{.}} 1200w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1500" }}
+        {{ with $largeavif.RelPermalink }}, {{.}} 1500w {{ end }}
+      {{ end }}'
+      type="image/avif"
+      />  */}}
+
+    <source
+      {{ with .sizes }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
+      srcset='
+      {{ if ge $src.Width "500" }}
+        {{ with $tinywebp.RelPermalink }}{{.}} 500w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "800" }}
+        {{ with $smallwebp.RelPermalink }}, {{.}} 800w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1200" }}
+        {{ with $mediumwebp.RelPermalink }}, {{.}} 1200w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1500" }}
+        {{ with $largewebp.RelPermalink }}, {{.}} 1500w {{ end }}
+      {{ end }}'
+      type="image/webp"
+      />
+
+    <img 
+      {{ with .sizes }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
+      srcset='
+      {{ if ge $src.Width "500" }}
+        {{ with $tinyjpeg.RelPermalink }}{{.}} 500w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "800" }}
+        {{ with $smalljpeg.RelPermalink }}, {{.}} 800w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1200" }}
+        {{ with $mediumjpeg.RelPermalink }}, {{.}} 1200w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1500" }}
+        {{ with $largejpeg.RelPermalink }}, {{.}} 1500w {{ end }}
+      {{ end }}'
+      src="{{ $src.RelPermalink }}" 
+      {{ with .alt }}alt="{{.}}"{{ else }}alt=""{{ end }} />
+  </picture>
+
+  {{ with .caption }}
+    <figcaption>{{.}}</p>
+  {{ end }}
+</figure>

@@ -1,0 +1,24 @@
+{{- $cover := false -}}
+{{- $coverCaption := index .Params "cover-caption" -}}
+{{- $autoCover := default $.Site.Params.autoCover false }}
+
+{{- if index .Params "cover" -}}
+  {{- $cover = (.Resources.GetMatch .Params.Cover) -}}
+{{- else if $.Site.Params.AutoCover -}}
+  {{- if (not .Params.Cover) -}}
+    {{- if .Resources.GetMatch "cover.*" -}}
+      {{- $cover = (.Resources.GetMatch "cover.*") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{if $cover -}}
+  <!-- Cover image found -->
+  {{ partial "img.html" (dict
+    "src" $cover
+    "class" "post-cover"
+    "alt" (.Title | plainify | default " ")
+    "title" (.Params.CoverCredit | plainify | default "Cover Image")
+    "caption" $coverCaption
+  )}}
+{{- end }}

@@ -3,6 +3,9 @@ languageCode = "en-us"
 theme = "terminal"
 paginate = 5
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
   themeColor = "pink"
   centerTheme = true

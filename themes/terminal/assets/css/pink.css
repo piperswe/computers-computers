@@ -12,3 +12,7 @@
   text-shadow: 0 0 0.1em #e2e2e2;
   background: #b946af;
 }
+
+figure figcaption {
+  text-align: center;
+}
