@@ -19,7 +19,7 @@ module.exports = (env, { mode }) => ({
     red: join("assets", "css", "color", "red.css"),
     blue: join("assets", "css", "color", "blue.css"),
     green: join("assets", "css", "color", "green.css"),
-    pink: join("assets", "css", "color", "pink.css"),
+    pink: join("assets", "css", "pink.css"),
   },
   output: {
     filename: "[name].js",

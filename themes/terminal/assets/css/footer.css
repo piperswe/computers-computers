@@ -22,7 +22,8 @@
 
   .copyright {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    row-gap: 1em;
     align-items: center;
     font-size: 1rem;
     color: var(--light-color-secondary);

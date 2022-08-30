@@ -18,7 +18,7 @@
         ];
 
         buildPhase = ''
-          hugo
+          hugo --minify
         '';
 
         installPhase = ''

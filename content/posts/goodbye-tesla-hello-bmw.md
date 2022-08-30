@@ -11,10 +11,10 @@ readingTime = true
 hideComments = false
 +++
 
-Warning: this is going to be a very different post from my others - I'm more
-writing to my future self than an audience. It might sound like ranting against
-Tesla, but I want to remind myself why I sold my Tesla in the first place if I
-ever find myself wanting to buy one in the future.
+> Warning: this is going to be a very different post from my others - I'm more
+> writing to my future self than an audience. It might sound like ranting
+> against Tesla, but I want to remind myself why I sold my Tesla in the first
+> place if I ever find myself wanting to buy one in the future.
 
 ## The Tesla Model Three™
 

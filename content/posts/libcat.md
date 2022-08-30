@@ -11,6 +11,8 @@ readingTime = true
 hideComments = false
 +++
 
+## Introduction
+
 I own quite a few books. I haven't finished cataloging yet, so I don't know
 exactly how many, but it's measured in the hundreds. A typical home library
 probably consists of a few bookshelves, with books ordered in whatever way the

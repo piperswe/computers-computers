@@ -8,7 +8,7 @@
 {{ template "_internal/google_analytics.html" . }}
 
 <!-- Theme CSS -->
-<link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
+<!-- <link rel="stylesheet" href="{{ "assets/style.css" | absURL }}"> -->
 {{ if (isset .Params "color") }}
   <link rel="stylesheet" href="{{ (printf "assets/%s.css" .Params.color) | absURL }}">
 {{ else if and (ne $.Site.Params.ThemeColor "orange") (ne $.Site.Params.ThemeColor "color" "") }}

@@ -1,13 +1,16 @@
 <footer class="footer">
   <div class="footer__inner">
-    {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">
-        <span>{{ $.Site.Copyright | safeHTML }}</span>
-    {{ else }}
-      <div class="copyright">
-        <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
-    {{ end }}
-        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+        <span>This page was generated {{ now.Format "2006-01-02" }}.</span>
+        <span>&copy; 2018-{{ now.Format "2006" }} Piper McCorkle</span>
+        <span>Except where otherwise noted or where I do not have authority
+          to grant such a license, code blocks on this site are licensed under
+          the <a href="https://blueoakcouncil.org/license/1.0.0">Blue Oak Model License 1.0.0</a>
+          and other content is licensed under the
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</span>
+        <span>Blog generated using <a href="https://gohugo.io/">Hugo</a> using
+          a theme originally made by <a href="https://twitter.com/panr">panr</a>
+          and modified for this blog</span>
       </div>
   </div>
 </footer>
