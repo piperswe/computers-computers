@@ -1,0 +1,8 @@
+TY - BLOG
+TI - {{ .Title | safeHTML }}
+AU - McCorkle, Piper
+PY - {{ .Date.Format "2006/01/02/15:04:05 MST" }}
+{{ range .Params.tags }}KW - {{ . }}
+{{ end }}JF - Computers? Computers.
+UR - {{ .Permalink }}
+ER -

@@ -41,3 +41,14 @@ unsafe = true
     #     identifier = "showcase"
     #     name = "Showcase"
     #     url = "/showcase"
+
+[mediaTypes]
+  [mediaTypes."application/x-research-info-systems"]
+    suffixes = ["ris"]
+
+[outputFormats]
+  [outputFormats.RIS]
+    mediaType = "application/x-research-info-systems"
+
+[outputs]
+  page = ["HTML", "RIS"]

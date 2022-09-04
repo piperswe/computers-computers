@@ -26,6 +26,9 @@
     {{ end }}
   </span>
   {{ end }}
+  {{ with  .OutputFormats.Get "ris" -}}
+    <a class="cite" href="{{ .RelPermalink }}">Cite this (RIS format)</a>
+  {{- end }}
   {{ partial "cover.html" . }}
 
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
