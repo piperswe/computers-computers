@@ -1,6 +1,6 @@
 baseURL = "https://piperswe.me/"
 languageCode = "en-us"
-theme = "terminal"
+theme = ["terminal", "hugo-simplecite"]
 paginate = 5
 timeout = "120s"
 

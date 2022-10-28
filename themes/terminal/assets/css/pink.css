@@ -20,3 +20,7 @@ figure figcaption {
 .cite {
   opacity: .5;
 }
+
+ol.hugo-simplecite-reference-list li:before {
+  content: '';
+}

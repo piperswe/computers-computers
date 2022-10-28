@@ -72,5 +72,9 @@
   <link href="{{ .RelPermalink }}" rel="alternate" type="application/json" title="{{ $.Site.Title }}" />
 {{ end }}
 
+<!-- hugo-simplecite -->
+{{ $simpleciteStyle := resources.Get "scss/hugo-simplecite.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" type="text/css" href="{{ $simpleciteStyle.Permalink }}">
+
 <!-- Extended head section-->
 {{ partial "extended_head.html" . }}

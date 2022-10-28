@@ -1,0 +1,3 @@
+[submodule "themes/hugo-simplecite"]
+	path = themes/hugo-simplecite
+	url = https://github.com/joksas/hugo-simplecite
