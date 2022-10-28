@@ -20,7 +20,11 @@ The political spectrum is complicated. Just because someone stands for one posit
 
 The left-right axis structure can be used to describe many political axes, though it is typically expressed as a social axis and an economic axis. In this way, for example, one could be on the social left (advocating for protections for minorities, for example), while being on the economic right (advocating for reduced welfare programs, for example)[^1].
 
+[^1]: There exists a common notion that this particular combination, especially at this extreme, is essentially self-defeating in that economically right policies tend to disadvantage those that a socially left individual would want to be advantaging {{< cite "moynHumanRightsAre2018" >}}. Nevertheless, this particular stance appears to persist amongst many.
+
 On the right hand of the economic axis falls capitalism - an economic system built around the free, efficient market, and the ability of any individual to participate in the market intelligently in order to rise in class[^2]. On the left hand of this axis falls socialism and related systems - systems built around distributing ownership of capital, the means of production, to the individuals of the system {{< cite "marxCommunistManifesto2011" >}}. To one further extreme, communism, a socialist system, aims to abolish "private property," or the private ownership of capital, entirely.
+
+[^2]: This is often referred to using the idiom "to pull oneself up by their bootstraps," an interesting contronym that evokes parallels with the reality of attempting this in modern capitalist systems {{< cite "bolognaWhyPhrasePull2018" >}}.
 
 On the right hand of the _social_ axis falls fascism and nationalism - social ideals characterized by raising an in-group while excluding an out-group, among other ideals {{< cite "rentonFascismHistoryTheory2020" >}}. On the left hand of this axis falls progressivism - the idea that society can improve for all who live in it, instead of just specific in-groups.
 
@@ -54,6 +58,8 @@ The Democratic Party survives because people hate the alternative more {{< cite 
 
 It is common for right-leaning media to refer to rather moderate capitalist Democrats as being of the "radical left", being "Neo-Marxist"[^3] {{< cite "creitzLevinNeoMarxistDemocrat2021" >}}, or being a "communist" {{< cite "shapiroBenShapiroBernie2020" >}}. Even if the Democratic party is used as an endstop of the economic axis and therefore considered far-left, it is blatant misinformation to refer to them as Marxist or communist as those are directly opposed to the Democratic Party's self-avowed dedication to capitalism {{< cite "pelosiHouseMinorityLeader2017" >}}.
 
+[^3]: This term appears to be fabricated by those on the right, as there doesn't appear to exist any left-leaning or neutral definition.
+
 It's likely that the overuse of the terms "radical left," "socialist," "communist," and others can be traced back to the Red Scares. Under the Red Scares, there was a growing sentiment that anything leftist was un-American and therefore should be shut down, and there was a growing trend of labelling anything the establish didn't like as communist to provide a (dubious) reason to shut it down.
 
 The "radical left" that right-wing media loves to talk about simply doesn't exist at the scale they make it seem like, and what little of it does exist has little to no influence. They simply use it to prey on fear of socialism, but that fear is slowly disappearing. We may yet see the dysfunctional left sort itself out and rise again, but now is not that time - for now, we have to put up with the center-aligned Democratic Party.
@@ -61,7 +67,3 @@ The "radical left" that right-wing media loves to talk about simply doesn't exis
 ## Bibliography
 
 {{< references >}}
-
-[^1]: There exists a common notion that this particular combination, especially at this extreme, is essentially self-defeating in that economically right policies tend to disadvantage those that a socially left individual would want to be advantaging {{< cite "moynHumanRightsAre2018" >}}. Nevertheless, this particular stance appears to persist amongst many.
-[^2]: This is often referred to using the idiom "to pull oneself up by their bootstraps," an interesting contronym that evokes parallels with the reality of attempting this in modern capitalist systems {{< cite "bolognaWhyPhrasePull2018" >}}.
-[^3]: This term appears to be fabricated by those on the right, as there doesn't appear to exist any left-leaning or neutral definition.
