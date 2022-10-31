@@ -5,12 +5,14 @@ author = "Piper McCorkle"
 cover = ""
 tags = ["essay"]
 keywords = []
-description = "An exploratory essay I wrote for my ENGL 1301 class"
+description = "Many media organizations like to throw around the term \"radical left,\" apparently characterizing some political movement or stance. These organizations make it seem as if there is some \"radical leftist\" cabal, supported by the Democratic Party, plotting the downfall of American values and virtues. Is this the case, or do those on the left believe something much different?\n\nThis is an exploratory essay I wrote for my _English Composition I_ class ([ENGL 1301](http://catalog.blinn.edu/preview_course.php?catoid=15&coid=18725)) at Blinn College."
 showFullContent = false
 readingTime = true
 hideComments = false
 draft = false
 +++
+
+> This is an exploratory essay I wrote for my _English Composition I_ class ([ENGL 1301](http://catalog.blinn.edu/preview_course.php?catoid=15&coid=18725)) at Blinn College. Take it as seriously as you wish, but consider that it is an essay written by a career engineer and math major, not someone with a formal education in political science.
 
 Many media organizations like to throw around the term "radical left," apparently characterizing some political movement or stance {{< cite "BonginoRadicalLeft2022" >}}{{< cite "RadicalLeftPhony2022" >}}{{< cite "grossmanIngrahamHereHow2022" >}}{{< cite "ellwangerCallThemGroomers2022" >}}. These organizations make it seem as if there is some "radical leftist" cabal, supported by the Democratic Party, plotting the downfall of American values and virtues. Is this the case, or do those on the left believe something much different?
 
